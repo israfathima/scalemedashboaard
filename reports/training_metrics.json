@@ -1,0 +1,36 @@
+{
+  "accuracy": 0.9703,
+  "roc_auc": 0.9964,
+  "classification_report": {
+    "0": {
+      "precision": 0.9960045662100456,
+      "recall": 0.9667590027700831,
+      "f1-score": 0.9811639021647456,
+      "support": 1805.0
+    },
+    "1": {
+      "precision": 0.8811881188118812,
+      "recall": 0.9845132743362832,
+      "f1-score": 0.9299895506792059,
+      "support": 452.0
+    },
+    "accuracy": 0.9703145768719539,
+    "macro avg": {
+      "precision": 0.9385963425109634,
+      "recall": 0.9756361385531831,
+      "f1-score": 0.9555767264219757,
+      "support": 2257.0
+    },
+    "weighted avg": {
+      "precision": 0.973010753970803,
+      "recall": 0.9703145768719539,
+      "f1-score": 0.9709154276979914,
+      "support": 2257.0
+    }
+  },
+  "records": 11281,
+  "hot_lead_rate": 0.2001,
+  "trained_at_utc": "2026-05-27T05:42:31.576018+00:00",
+  "label_definition": "Proxy target: top cohort-relative lead-score segment (Hot).",
+  "data_period": "2019-05-01 to 2019-05-31"
+}
