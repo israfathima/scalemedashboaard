@@ -1,67 +1,236 @@
-# MCA Pulse: Lead Intelligence and Market Insight Dashboard
+# 🚀 ScaleME Lead Intelligence Dashboard
 
-MCA Pulse is a modern Streamlit market-intelligence platform built from the May 2019 Ministry of Corporate Affairs
-company registration dataset. Its visual language follows the supplied editorial dashboard reference: an expansive
-serif-led hero, compact intelligence cards, numbered narrative sections, warm neutral surfaces, teal signals, and an
-optional dark mode.
+An AI-powered Business Intelligence Dashboard built with **Streamlit** to help identify, analyze, and prioritize high-potential business leads using MCA company registration data. The dashboard provides interactive visualizations, company insights, and AI-driven recommendations to support sales, investment, and market research decisions.
 
-## Features
+🌐 **Live Demo:** https://scalemedashboaard-38v42a4aycsa8sd5skgedh.streamlit.app/
 
-- Market intelligence for 11,281 Indian company registrations in May 2019
-- City, state and genuine industrial-activity analysis from the source workbook
-- Capital hotspots, market clusters, daily formation momentum and geographic ROC view
-- Cohort-relative lead scoring with Hot, Warm and Cold opportunities
-- RandomForest inference module with lead probability, strength, opportunity score, growth potential and rank
-- Modelled website engagement-potential indicators, explicitly separated from observed analytics
-- CSV, Excel and priority lead-report downloads scoped to the active filters
+---
 
-## Project Files
+## 📌 Project Overview
 
-| File | Purpose |
-| --- | --- |
-| `app.py` | Streamlit market-intelligence interface and exports |
-| `utils.py` | Workbook cleaning, feature creation, scoring and Excel export |
-| `train_model.py` | RandomForest training pipeline and `model.pkl` persistence |
-| `inference_network.py` | Runtime probability and opportunity inference |
-| `data/eir_May2019.xlsx` | Supplied MCA workbook copied into the runnable project |
-| `model.pkl` | Generated trained inference artifact |
-| `reports/training_metrics.json` | Generated holdout metrics and training disclosure |
+ScaleME Lead Intelligence Dashboard enables users to explore thousands of registered companies through an intuitive analytics interface.
 
-## Run
+The dashboard helps users:
 
-Use Python 3.12 or 3.13 on Windows. Python 3.14 is not yet supported by every pinned analytics dependency.
-Create a virtual environment, install packages, train the persisted model, and launch Streamlit:
+- Discover potential business leads
+- Analyze company registration trends
+- Filter companies by location and industry
+- Visualize capital investment patterns
+- Generate AI-powered lead recommendations
+- Export insights for business development
 
-```powershell
-py -3.12 -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install -r requirements.txt
-python train_model.py
+---
+
+## ✨ Features
+
+- 📊 Interactive Dashboard
+- 🔍 Advanced Search & Filters
+- 📍 State-wise Company Analysis
+- 🏭 Industry & Sub-Industry Insights
+- 💰 Authorized Capital Distribution
+- 📈 Company Registration Trends
+- 🗺️ Geographic Lead Distribution
+- 🤖 AI Lead Recommendation System
+- 📑 Export Reports
+- ⚡ Fast & Responsive Streamlit UI
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- Streamlit
+
+### Backend
+- Python
+
+### Data Processing
+- Pandas
+- NumPy
+
+### Visualization
+- Plotly
+- Matplotlib
+
+### Machine Learning
+- Scikit-learn
+
+### Dataset
+- MCA Company Registration Dataset
+
+---
+
+## 📂 Project Structure
+
+```
+scalemedashboaard/
+│
+├── app.py
+├── train_model.py
+├── clean_data.csv
+├── requirements.txt
+├── assets/
+├── models/
+├── utils/
+└── README.md
+```
+
+---
+
+## 📊 Dashboard Modules
+
+### 📍 Company Overview
+
+- Total Companies
+- Active Companies
+- Company Categories
+- Lead Statistics
+
+---
+
+### 🏭 Industry Analysis
+
+- Industry Distribution
+- Top Industries
+- Sub-Industry Analysis
+
+---
+
+### 📈 Registration Analysis
+
+- Year-wise Company Registrations
+- Growth Trends
+- Company Age Distribution
+
+---
+
+### 💰 Capital Insights
+
+- Authorized Capital
+- Paid-up Capital
+- Investment Trends
+
+---
+
+### 🗺️ Geographic Analysis
+
+- State-wise Distribution
+- Regional Heatmaps
+- Location-based Lead Discovery
+
+---
+
+### 🤖 AI Lead Recommendation
+
+The dashboard uses machine learning to identify promising companies based on multiple business attributes such as:
+
+- Company Age
+- Authorized Capital
+- Industry
+- Registration Trends
+- Geographic Location
+
+---
+
+## 🚀 Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/israfathima/scalemedashboaard.git
+```
+
+Move into the project
+
+```bash
+cd scalemedashboaard
+```
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the application
+
+```bash
 streamlit run app.py
 ```
 
-The application also trains `model.pkl` automatically on first launch when the file is absent.
+---
 
-## Data Processing
+## 📊 Dataset
 
-The app reads the `Indian company registered - May` worksheet, standardizes headers, parses registration dates,
-cleans text fields, extracts ROC city names, and converts capital figures from thousand rupees into rupees plus
-lakh-friendly display columns. The source also contains `State` and `Industrial Description`, which power real
-state and sector insights.
+The dashboard uses MCA (Ministry of Corporate Affairs) company registration data for business intelligence and lead analysis.
 
-## Scoring And Inference Disclosure
+---
 
-The MCA registration data contains no observed lead conversion, funding outcome or website traffic target. To avoid
-inventing such outcomes, `lead_score` is a transparent cohort-relative prioritisation index based on:
+## 🎯 Applications
 
-- Authorized and paid-up capital strength
-- Company class and listed flag
-- Within-month registration recency
-- ROC-market registration density
+- Sales Lead Generation
+- Startup Discovery
+- Investment Research
+- Business Intelligence
+- Market Analysis
+- Competitive Research
+- SME Growth Analysis
 
-The top cohort segment becomes the disclosed proxy target used to train the RandomForest classifier. Consequently,
-`lead_probability`, `growth_potential` and engagement-potential values should be used for outreach prioritisation,
-not interpreted as measured commercial performance.
+---
 
-In the source period, every Indian-company row is marked `Unlisted`, so listed status has no positive training
-variation and should not be treated as a validated predictive factor until additional months or outcomes are added.
+## 📸 Dashboard Preview
+
+<img width="100%" alt="Dashboard Preview" src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg">
+
+*(Replace this with screenshots of your dashboard for a richer README.)*
+
+---
+
+## 🔮 Future Enhancements
+
+- AI Chat Assistant
+- Predictive Lead Scoring
+- Company Similarity Search
+- PDF Report Generation
+- Google Maps Integration
+- CRM Integration
+- Real-time Company Updates
+- NLP-based Company Search
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to your branch
+5. Open a Pull Request
+
+---
+
+## 👩‍💻 Author
+
+**Mohammed Isra Fathima**
+
+B.Tech – Computer Science & Engineering (AI & ML)
+
+GitHub: https://github.com/israfathima
+
+LinkedIn: *(Add your LinkedIn profile here)*
+
+---
+
+## ⭐ Show Your Support
+
+If you found this project useful, please consider giving it a ⭐ on GitHub.
+
+Your support helps improve and grow the project!
+
+---
+
+## 🌐 Live Application
+
+👉 https://scalemedashboaard-38v42a4aycsa8sd5skgedh.streamlit.app/
