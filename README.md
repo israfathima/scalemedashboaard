@@ -1,138 +1,139 @@
 # 🚀 ScaleME Lead Intelligence Dashboard
 
-An AI-powered Business Intelligence Dashboard built with **Streamlit** to help identify, analyze, and prioritize high-potential business leads using MCA company registration data. The dashboard provides interactive visualizations, company insights, and AI-driven recommendations to support sales, investment, and market research decisions.
+An AI-powered Business Intelligence Dashboard built with **Python, Streamlit, Machine Learning, and Plotly** to analyze MCA company registration data and identify high-potential business leads.
 
-🌐 **Live Demo:** https://scalemedashboaard-38v42a4aycsa8sd5skgedh.streamlit.app/
+🌐 **Live Demo:**  
+https://scalemedashboaard-38v42a4aycsa8sd5skgedh.streamlit.app/
 
----
-
-## 📌 Project Overview
-
-ScaleME Lead Intelligence Dashboard enables users to explore thousands of registered companies through an intuitive analytics interface.
-
-The dashboard helps users:
-
-- Discover potential business leads
-- Analyze company registration trends
-- Filter companies by location and industry
-- Visualize capital investment patterns
-- Generate AI-powered lead recommendations
-- Export insights for business development
+📂 **GitHub Repository:**  
+https://github.com/israfathima/scalemedashboaard
 
 ---
 
-## ✨ Features
+# 📖 Overview
 
-- 📊 Interactive Dashboard
-- 🔍 Advanced Search & Filters
-- 📍 State-wise Company Analysis
-- 🏭 Industry & Sub-Industry Insights
-- 💰 Authorized Capital Distribution
-- 📈 Company Registration Trends
-- 🗺️ Geographic Lead Distribution
-- 🤖 AI Lead Recommendation System
-- 📑 Export Reports
-- ⚡ Fast & Responsive Streamlit UI
+ScaleME Lead Intelligence Dashboard helps businesses, investors, and sales teams discover valuable company insights using interactive analytics and AI-powered lead prediction.
+
+The dashboard provides:
+
+- Company Analytics
+- Lead Intelligence
+- Capital Analysis
+- Industry Insights
+- Registration Trends
+- Machine Learning Predictions
+- Interactive Visualizations
 
 ---
 
-## 🛠️ Tech Stack
+# ✨ Features
 
-### Frontend
+- 📊 Interactive Streamlit Dashboard
+- 🔍 Company Search & Filtering
+- 🏢 Industry-wise Analysis
+- 📍 State-wise Company Distribution
+- 📈 Registration Trend Analysis
+- 💰 Authorized Capital Insights
+- 🤖 AI Lead Prediction Model
+- 📉 Interactive Plotly Charts
+- ⚡ Fast Machine Learning Inference
+
+---
+
+# 🛠️ Tech Stack
+
+## Frontend
 - Streamlit
 
-### Backend
+## Backend
 - Python
 
-### Data Processing
+## Data Processing
 - Pandas
 - NumPy
 
-### Visualization
+## Machine Learning
+- Scikit-learn
+
+## Visualization
 - Plotly
 - Matplotlib
 
-### Machine Learning
-- Scikit-learn
-
-### Dataset
-- MCA Company Registration Dataset
+## Model Storage
+- Pickle (.pkl)
 
 ---
 
-## 📂 Project Structure
+# 📂 Repository Structure
 
 ```
 scalemedashboaard/
 │
-├── app.py
-├── train_model.py
-├── clean_data.csv
-├── requirements.txt
-├── assets/
-├── models/
-├── utils/
-└── README.md
+├── .devcontainer/
+├── .gitignore
+├── README.md
+│
+├── app.py                      # Main Streamlit application
+├── app.py.bak                  # Backup application
+├── app_premium.py              # Premium dashboard
+├── app_premium_v2.py           # Premium Version 2
+├── app_premium_v3.py           # Premium Version 3
+│
+├── train_model.py              # ML model training
+├── inference_network.py        # Model inference
+├── utils.py                    # Utility functions
+│
+├── model.pkl                   # Trained Machine Learning model
+├── eir_May2019.xlsx            # MCA company dataset
+├── requirements.txt            # Dependencies
 ```
 
 ---
 
-## 📊 Dashboard Modules
+# 📊 Dashboard Modules
 
-### 📍 Company Overview
+### 📈 Company Overview
 
 - Total Companies
 - Active Companies
 - Company Categories
-- Lead Statistics
+- Lead Summary
 
----
-
-### 🏭 Industry Analysis
+### 🏭 Industry Analytics
 
 - Industry Distribution
-- Top Industries
 - Sub-Industry Analysis
+- Top Performing Sectors
 
----
+### 📍 Geographic Analysis
 
-### 📈 Registration Analysis
+- State-wise Companies
+- Regional Business Distribution
 
-- Year-wise Company Registrations
-- Growth Trends
-- Company Age Distribution
-
----
-
-### 💰 Capital Insights
+### 💰 Capital Analysis
 
 - Authorized Capital
 - Paid-up Capital
-- Investment Trends
+- Capital Distribution
 
----
+### 📅 Registration Trends
 
-### 🗺️ Geographic Analysis
+- Year-wise Company Growth
+- Registration Timeline
 
-- State-wise Distribution
-- Regional Heatmaps
-- Location-based Lead Discovery
+### 🤖 AI Lead Intelligence
 
----
-
-### 🤖 AI Lead Recommendation
-
-The dashboard uses machine learning to identify promising companies based on multiple business attributes such as:
+Machine Learning predicts promising business leads using:
 
 - Company Age
 - Authorized Capital
 - Industry
-- Registration Trends
+- Registration Year
 - Geographic Location
 
 ---
 
-## 🚀 Installation
+# ⚙️ Installation
 
 Clone the repository
 
@@ -140,7 +141,7 @@ Clone the repository
 git clone https://github.com/israfathima/scalemedashboaard.git
 ```
 
-Move into the project
+Go to project directory
 
 ```bash
 cd scalemedashboaard
@@ -152,7 +153,7 @@ Install dependencies
 pip install -r requirements.txt
 ```
 
-Run the application
+Run the dashboard
 
 ```bash
 streamlit run app.py
@@ -160,58 +161,70 @@ streamlit run app.py
 
 ---
 
-## 📊 Dataset
+# 📦 Dependencies
 
-The dashboard uses MCA (Ministry of Corporate Affairs) company registration data for business intelligence and lead analysis.
+- Streamlit
+- Pandas
+- NumPy
+- Plotly
+- Scikit-learn
+- Matplotlib
+- OpenPyXL
+
+Install all dependencies using:
+
+```bash
+pip install -r requirements.txt
+```
 
 ---
 
-## 🎯 Applications
+# 📊 Dataset
 
-- Sales Lead Generation
+The dashboard uses **MCA (Ministry of Corporate Affairs)** company registration data stored in:
+
+```
+eir_May2019.xlsx
+```
+
+The dataset includes:
+
+- Company Name
+- Industry
+- Registration Date
+- Authorized Capital
+- Paid-up Capital
+- State
+- Company Status
+
+---
+
+# 🎯 Applications
+
+- Business Lead Generation
+- Sales Intelligence
+- Market Research
+- Investment Analysis
 - Startup Discovery
-- Investment Research
-- Business Intelligence
-- Market Analysis
-- Competitive Research
-- SME Growth Analysis
+- Company Analytics
+- Business Development
 
 ---
 
-## 📸 Dashboard Preview
-
-<img width="100%" alt="Dashboard Preview" src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg">
-
-*(Replace this with screenshots of your dashboard for a richer README.)*
-
----
-
-## 🔮 Future Enhancements
+# 🚀 Future Improvements
 
 - AI Chat Assistant
 - Predictive Lead Scoring
-- Company Similarity Search
-- PDF Report Generation
-- Google Maps Integration
 - CRM Integration
-- Real-time Company Updates
-- NLP-based Company Search
+- PDF Report Generation
+- Export to Excel
+- Company Similarity Search
+- Real-time MCA Data Updates
+- Interactive Maps
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome!
-
-1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Push to your branch
-5. Open a Pull Request
-
----
-
-## 👩‍💻 Author
+# 👩‍💻 Author
 
 **Mohammed Isra Fathima**
 
@@ -219,18 +232,21 @@ B.Tech – Computer Science & Engineering (AI & ML)
 
 GitHub: https://github.com/israfathima
 
-LinkedIn: *(Add your LinkedIn profile here)*
+---
+
+# 🌐 Live Demo
+
+https://scalemedashboaard-38v42a4aycsa8sd5skgedh.streamlit.app/
 
 ---
 
-## ⭐ Show Your Support
+# ⭐ Support
 
-If you found this project useful, please consider giving it a ⭐ on GitHub.
+If you found this project useful, please ⭐ the repository.
 
-Your support helps improve and grow the project!
+Your support is appreciated!
 
----
 
-## 🌐 Live Application
 
-👉 https://scalemedashboaard-38v42a4aycsa8sd5skgedh.streamlit.app/
+
+
